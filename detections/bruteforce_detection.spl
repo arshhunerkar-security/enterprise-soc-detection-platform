@@ -1,0 +1,3 @@
+index=* event_type=login status=failed
+| stats count by source_ip
+| where count > 3
